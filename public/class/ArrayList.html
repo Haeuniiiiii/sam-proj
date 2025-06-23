@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+ function ArrayList(){
+    this.length = 0;     // 여기서 만들어져 내보내지는 객체에 length 속성 추가
+    return this;  // 생략 해도 됨 그저 명시적 표현
+ }  
+
+ // 메소드 추가
+ ArrayList.prototype.add = function(pValue){
+    this[this.length] = pValue;  
+    this.length++;       // 다음 값을 위한 index 증가!
+ }
+
+ let mylist = new ArrayList();// 
+ mylist.add("철호");
+ mylist.add("미르");
+
+ console.log("체킁:",mylist);
+
+</script>

@@ -16,7 +16,7 @@
 
         // 페이지 처리 위해서 하나 만들자! queryString이 없는 경우
         if( location.href.indexOf("?") == -1 ) return null;// ? 뒤에 번호가 없으면 -1 못찾겠다!
-        
+         
         let queryString = location.href.split("?")[1];
         let items = queryString.split("&");
         

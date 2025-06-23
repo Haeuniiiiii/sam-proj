@@ -1,8 +1,6 @@
 리액트 하기 전에 자바스크립트를 정리할 것임
 => 자바스크립트 ES6 버젼 내용과 비동기 AJAX 못하면 리액트 할 필요없음
-내일 오전 1시간 REVIEW 진행 => 답변 못하면 아주 미움 받음 
-
-// 깃 테스트 2
+내일 오전 1시간 REVIEW 진행 => 답변 못하면 아주 미움 받음
 
 // 어제 배운 거 키워드
 Node => JS Runtime Environment => OS 위에서 js 사용가능 => B/E
@@ -84,4 +82,12 @@ localStorage -> 쿠키 대용으로 많이 사용됨
 게시판은 실제 게시판으로는 못쓴다 -> 일기장 -> 실제 게시판으로 쓰려면 서버쪽에도 저장공간이 필요(동기화)
 페이지 나누기 (그냥 한번 더 해보면 됨! -> 산수)  
 
-변경했음ㅓㅣㅗㅘㅓㅓㅏㅘㅓㅗㅇㄹ나ㅓㅣㅏㅓㄴㅇ
+이벤트  => 등록법 3가지 ( inline, on이벤트명(덮어씀=>오버라이딩), addEventListener(추가등록) )
+          event.stopPropergation(디폴트는 이벤트버블링 => 이벤트 캡쳐링)
+          event.preventDefault ( 내가 넣지 않은 기본 장착된 이벤트(built-in) 막기 )
+          이벤트 동적 바인딩 (모습과 id가 똑같은 객체(element)가 추가되면 이벤트 등록 필요)
+
+AJAX (비동기 자바스크립트 XML=> JSON, csv )
+     => 동기 => 비동기? (효율-> 성능)
+     => 원본(XMLHttpRequest) => $.ajax => Promise => fetch => axios ===> async/await
+

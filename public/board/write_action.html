@@ -17,7 +17,7 @@ const bgul = {
     // 속성명과 변수명이 값을 때는 콜론 생략 가능
     // title:title,
     // writer:writer,
-    // skills:skills,
+    // skills:skills, 
     // cont:cont
     id:1, // 추후 primary key 느낌으로 쓰기 위해 (중복 배제! -> 검색 효율향상)
     title,
@@ -26,7 +26,7 @@ const bgul = {
     cont
 }
 
-let gulTable; //선언만;
+let gulTable; // 선언만;
 
 if (!localStorage.getItem(bdTable)) { // 
     gulTable = []; // 빈배열로 초기화
