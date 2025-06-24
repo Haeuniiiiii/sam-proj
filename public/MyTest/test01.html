@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">일반 함수 클릭</button>
+    <button id="btn2">화살표 함수 클릭</button> 
+</body>
+
+<script>
+    document.getElementById("btn1").addEventListener("click", function () {
+        console.log("버튼1 this →", this);  // 👉 누구?
+    });
+
+    document.getElementById("btn2").addEventListener("click", () => {
+        console.log("버튼2 this →", this);  // 👉 누구?
+    });
+//각각의 버튼을 클릭해서 콘솔 확인
+// 왜 다르게 나오는지 생각해보기 (힌트: 함수의 선언 위치!)
+</script>
+
+</html>
