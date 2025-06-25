@@ -1,4 +1,4 @@
 {
-    "codeium.enable": true,
-    "codeium.enableForAllLanguages": true
+  "codeium.enabled": true,
+  "codeium.enableForAllLanguages": true
 }
