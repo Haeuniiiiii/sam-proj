@@ -91,3 +91,19 @@ AJAX (비동기 자바스크립트 XML=> JSON, csv )
      => 동기 => 비동기? (효율-> 성능)
      => 원본(XMLHttpRequest) => $.ajax => Promise => fetch => axios ===> async/await
 
+function 키워드를 class(생성자함수)로 사용
+=> 생략된 return this 메소드 안 return this 가 머리에서 구분되어야 잘 쓸 수 있음
+
+Array (배열) => forEach(새배열리턴), filter(새배열리턴)
+
+jQuery => 읽기(첫번째요소), 전부쓰기, 부분조작(콜백함수사용)
+          prototype(마을회관)을 이용해서 jQuery plugin 개발도 가능하도록 함
+          즉각실행함수(핵심코드 보호 및 초기화) / 팩토리패턴(new 숨기기)
+          사용에 주의 $("선택자") 할 때 마가 새로운 객체가 생성되니 주의 (같은게 만들어지지 않도록)
+          --> 이렇게 안하면 메모리낭비... 비효율.. 
+
+" jQuery는 시대의 뒤안길로 들어갔지만,,,, jQuery가 남긴 것은 많다! "
+
+
+
+

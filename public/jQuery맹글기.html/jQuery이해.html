@@ -117,6 +117,29 @@
         this.style.color="yellow";
         //alert(this.innerHTML);
     })  
+
+    // 예제1번
+    // jQuery 사용의 가장 잘못된 방식
+    // 오늘 TV샀는데, 내일 또 사, 내일도 또 사,,
+    $(".yujin").html("메롱");               // 이미 여기에서 객체가 하나 만들어졌는데
+    $(".yujin").html((idx, val) => "안뇽"); // 또 만들어짐, 이게 jQuery의 가장 큰 단점
+    
+    // 위의 경우라면
+    // 메소드체이닝 활용해서 객체생성은 1번만!
+    $(".yujin").html("메롱").html((idx, val) => "안뇽"); 
+    
+    // 예제2번
+    // jQuery 사용의 가장 올바른 방식
+    const $yujin1 = $(".yujin");         // 이미 객체가 만들어졌으니, 이걸 재사용
+    $yujin1.html("욱진");                // 전부쓰기  
+    $yujin1.html((idx, val) => "안뇽");  // jQuery로 만들어진 객체이다! 라고 표현하려고 앞에 $를 붙임
+
+
+    
+
+
+
+
     //alert(yujins.html());   // 읽기
     //yujins.html("<h1>욱진 잘자깅</h1>");  // 전부쓰기
     // 진 과 세만 h1으로 묶어서 크게 하려면? 제한 시간 30초
