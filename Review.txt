@@ -118,6 +118,15 @@ ES6 => ` 백틱 `
        - 구조분해 => 사용법 = 양쪽이 같은 타입 [] = [] , {} = {}
        - 값을 뽑아내기 편한 문법 "직관적!"
 
+ESM 모듈(브라우져에서도 사용가능) => export / import {} / export default
+                                   <script type = "module">
+
+fetch(then 두번써야 해서 짜증나지만 built-in) / axios(편하지만 외부 라이브러리 필요)
+async / await 이건 꼭! 잘 써야한다~
+외부 파일 드래그 앤 드롭!
+
+
+
        
 
 
